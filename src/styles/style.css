@@ -1,0 +1,41 @@
+nav {
+    background-color:  #2E4052 ;
+    padding: 30px 0px;
+}
+nav a {
+    background-color: #412234;
+    padding: 10px;
+    border-radius: 10%;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #EFD2CB;
+}
+
+div.App {
+    background-color: #6A8D73;
+   min-height: 100vh;
+}
+
+.browseHouse {
+    margin: 2em 0;
+}
+.browseHouse img {
+    max-width: 480px;
+}
+
+h2 {
+   color: #0F141A;
+}
+form {
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    max-width: 30%;
+    /* align-items: center; */
+}
+
+form img {
+    max-width: 25%;
+}
+
+
