@@ -1,7 +1,9 @@
-import { useState, useContext, useEffect } from "react";
-import { HouseContext } from "../contexts/HouseContext";
+import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 function AddNew(){
+    const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
         title: "",
         pricePerDay: "",
@@ -34,14 +36,14 @@ function AddNew(){
             body: JSON.stringify(formData)
         })
         .then(res => res.json())
-        .then(data => console.log("Success:", data))
+        .then(data => {
+            console.log("Success:", data)
+            navigate("/browse")
+        })
         .catch(err => console.log("Error:", err))
 
-    }
-
-    useEffect(() => {
         
-    }, [formData])
+    }
 
     return(
         <div>
